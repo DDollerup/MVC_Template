@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/CSS/Layout.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="fullWidth" id="headerHolder">
+        <header class="container">
+            <!-- Din header info her - Logo, Banner etc. -->
+        </header>
+    </div>
+    <div class="fullWidth" id="navHolder">
+        <nav class="container">
+            <!-- Dine links her -->
+        </nav>
+    </div>
+    <div class="fullWidth" id="contentWrapperHolder">
+        <div id="contentWrapper" class="container">
+            <!-- Det her er hvor dine undersider kommer ind -->
+            @RenderBody()
+        </div>
+    </div>
+    <div class="fullWidth" id="footerHolder">
+        <footer class="container">
+            <!-- Dine footer informationer her -->
+        </footer>
+    </div>
+</body>
+</html>
